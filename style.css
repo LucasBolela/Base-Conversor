@@ -13,9 +13,6 @@ body{
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
 }
-p{
-  margin-bottom: 10px;
-}
 .container{
   grid-template-columns: 1fr 1fr 1fr;
   margin: auto;
@@ -39,30 +36,29 @@ p{
 form{
   display: flex;
   flex-direction: column;
+  width: 250px;
 }
-form input{
-  margin: 15px 0;
-}
-form select{
-  margin-bottom: 15px;
+form input:placeholder-shown{
+  padding-left: 10px;
 }
 form input,
-form select,
-button{
+form select{
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
   cursor: pointer;
   background-color: rgb(255, 255, 255);
   border: none;
   border-radius: 18px;
-  padding: 5px;
+  padding: 8px 10px;
   box-shadow: 2px 4px 8px rgba(75, 75, 75, 0.555);
   font-weight: 700;
 }
-button:hover{
+form input:hover,
+form select:hover{
   transition: .4s;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.85);
 }
-.group-base{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+form select{
+  padding: 7px 6px;
 }

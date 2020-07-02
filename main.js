@@ -34,8 +34,9 @@ const base2Dec = base => number =>{
   return soma
 }
 
-//Event listener run converter function when click the button
-document.querySelector('#button').addEventListener("click",()=>{
+//Event listener run converter function when digit the number
+
+document.querySelector('#numero').addEventListener("keyup",()=>{
   let base = document.querySelector('#base').value
   let number = (document.querySelector('#numero').value).toUpperCase()
   let basesNumber = [2,8,10,16]
